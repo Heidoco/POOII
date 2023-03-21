@@ -1,6 +1,14 @@
+import java.lang.reflect.Method;
 public class Main {
-    public static void main(String[] args) {
-        Carro jorge = new Carro("Carro muito bom", 2001);
-        jorge.imprimirDetalhes();
+    public static void main(String[] args) throws Exception {
+        Carro jorge = new Carro("muito bom", 2001);
+        // Carrega a classe desejada usando um URLClassLoader
+        Class<?> classe = jorge.getClass();
+
+        // Obtém todos os métodos da classe usando a reflexão
+        Method[] metodos = classe.getDeclaredMethods();
+        for (Method metodo : metodos) {
+            System.out.println(metodo.getName());
+        }
     }
 }
