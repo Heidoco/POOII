@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Funcao2","l":"calcularRaizes()"},{"p":"<Unnamed>","c":"Funcao2","l":"Funcao2(double, double, double)","url":"%3Cinit%3E(double,double,double)"}]

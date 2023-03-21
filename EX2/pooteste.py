@@ -17,17 +17,17 @@ class Ave(Animal):
     
 class Inseto(Animal):
     def voar(self):
-        return f"{self.nome} está voando zumbindo!"
+        return f"{self.nome} está voandoaaaaaaaaaaaaaaaaaaaaaa!"
     
     def polinizar(self, flor):
         return f"{self.nome} está polinizando a flor {flor}."
     
 class Morcego(Ave):
     def voar(self):
-        return f"{self.nome} está planando pelo ar!"
+        return f"{self.nome} está planando!"
     
     def caçar_inseto(self):
-        return f"{self.nome} está caçando insetos."
+        return f"{self.nome} está caçando."
 
 if __name__ == '__main__':
     # Cria um objeto de cada classe
