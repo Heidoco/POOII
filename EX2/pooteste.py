@@ -1,3 +1,4 @@
+import inspect
 class Animal:
     def __init__(self, nome):
         self.nome = nome
@@ -45,3 +46,11 @@ if __name__ == '__main__':
     print(morcego.voar())
     print(morcego.caçar_inseto())
     print(morcego.comer("caco de vidro"))
+    print("\nComandos de Reflexão:\n")
+    
+    print(f"Classes base de Morcego: {Morcego.__bases__}")
+    print(f"Atributos de uma instância de Ave: {dir(ave)}")
+    print(f"Instância de Animal? {isinstance(inseto, Animal)}")
+    
+    caçar_inseto_signature = inspect.signature(Morcego.caçar_inseto)
+    print(f"Assinatura do método caçar_inseto: {caçar_inseto_signature}")
