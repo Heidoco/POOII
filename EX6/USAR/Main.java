@@ -8,6 +8,7 @@ public class Main {
         // Obtém todos os métodos da classe usando a reflexão
         Method[] metodos = classe.getDeclaredMethods();
         for (Method metodo : metodos) {
+            System.out.println("Método da classe carro: ");
             System.out.println(metodo.getName());
         }
     }
